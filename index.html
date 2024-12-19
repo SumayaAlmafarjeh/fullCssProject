@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumaya Almafarjeh</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+             overflow-x: hidden;
+        }
+        .c{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4));
+            overflow: hidden;
+        }
+        #bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+        }
+        #logo{
+            width: 100px;
+            margin-bottom: 30px;
+        }
+        .menu a{
+            color: white;
+            font-size:20px;
+            text-decoration: none;
+            padding: 20px;
+        }
+        #hero{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center ;
+            margin-top: 70px;
+            color: white;
+            text-align: center;
+        }
+        #hero h1{
+            font-size: 60px;
+            padding: 10px;
+        }
+        #hero h3{
+            padding: 40px;
+        }
+        #hero button{
+            border: none;
+            padding: 15px 50px;
+            border-radius: 10px;
+            background-color: rgb(14, 125, 195);
+            color: white;
+            font-size: 18px;
+        }
+        #logo:hover{
+            box-shadow: 5px 10px 10px rgba(255, 217, 0, 0.689);
+            border-radius: 50%;
+        }
+        .menu a:hover{
+            color:rgba(255, 217, 0);
+        }
+        #hero button:hover{
+            background-color: rgba(255, 217, 0);
+            color: rgb(68, 68, 68);
+        }
+        @media(max-width:800px){
+            nav{
+                display: flex;
+                flex-direction: column;
+            }
+            #hero h1{
+            font-size: 40px;
+            padding: 5px;
+            }
+             #hero h3{
+            padding: 30px;
+            }
+            #hero button{
+            border: none;
+            padding: 10px 30px;  
+        }
+        }
+        #sec1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+        }
+        .description{
+            padding: 30px;
+            text-align: center;
+            color: rgb(61, 61, 61);
+        }
+        .description h1{
+            font-weight: 400px;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .description p{
+            margin-bottom: 30px;
+            line-height: 2.5;
+        }
+        .description hr{
+            width: 13%;
+            border: 1px solid rgb(88, 191, 255);
+            margin: auto;
+
+        }
+        .imgs{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           margin-top: 30px;
+        }
+        .line1imgs, .line2imgs{
+            display: flex;
+            
+        }
+        .simg{
+            width:350px;
+            height: 300px;
+            margin: 20px;
+        }
+        .limg{
+            width: 550px;
+            height: 300px;
+            margin: 20px;
+        }
+        .sec2{
+            background-color: rgb(235, 235, 235);
+            padding:30px;
+        }
+        .features{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            justify-content:space-around;
+            
+        }
+        .fdiv{
+            display: flex;
+            flex-direction: column;
+            width: 325px;
+            padding: 30px
+        }
+        .fdiv h2{
+            color: rgb(60, 60, 60);
+            padding: 20px;
+        }
+        .fdiv p{
+            color: rgb(104, 104, 104);
+            padding: 5px;
+            line-height: 1.5;
+        }
+        #lastsec{
+            margin-top:200px;
+        }
+        .subscribe{
+            margin: 40px;
+            margin-bottom: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .subscribe input{
+            width: 50%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 7px;
+            margin-right: 15px;
+        }
+        .subscribe button{
+            background-color:rgb(88, 191, 255);
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            border-radius: 7px;
+            color: white;
+
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(64, 64, 64);
+            color:rgba(235, 235, 235, 0.629) ;
+            padding: 50px;
+        }
+        footer p{
+           line-height: 2;
+           font-size: 12px;
+        }
+        footer a{
+           text-decoration: none;
+           color:rgb(235, 235, 235);
+           font-style: bold;
+           font-size: 14px ;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="c">
+        <img id="bg" src="bgFullproject.jpg" alt="">
+        <nav>
+            <img id="logo" src="logofullproject.png" alt="">
+            <div class="menu">
+                <a href="">Home</a> 
+                <a href="">Products</a>
+                <a href="">About</a>
+                <a href="">Contacts</a>
+            </div>
+        </nav>
+        <div id="hero">
+            <h1>Responsive Flexbox Template</h1>
+            <h3>A freebie by Tutorializine.</h3>
+            <button>DOWNLOAD IT HERE</button>
+        </div>
+    </div>
+
+    <section id="sec1">
+        <div class="description">
+            <h1>Some of Our Work</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia repudiandae, quis obcaecati animi in voluptate illum eius. Quae facere fugiat nihil incidunt commodi. Sapiente assumenda porro laborum vitae blanditiis</p>
+            <hr>
+        </div>
+        <div class="imgs">
+            <div class="line1imgs">
+                <img src="im1sm.jpg" alt="" class="simg">
+                <img src="im2L.jpg" alt="" class="limg">
+            </div>
+            <div class="line2imgs">
+                <img src="im3L.jpg" alt="" class="limg">
+                <img src="im4sm.jpg" alt="" class="simg">
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2">
+        <div class="description">
+            <h1>Features And Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia repudiandae, quis obcaecati animi in voluptate illum eius. Quae facere fugiat nihil incidunt commodi. Sapiente assumenda porro laborum vitae blanditiis</p>
+            <hr>
+        </div>
+
+
+        <div class="features">
+            <div class="fdiv">
+                <h2>Photography</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia repudiandae, quis obcaecati animi in voluptate a </p>  
+            </div>
+            <div class="fdiv">
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia repudiandae, quis obcaecati animi in voluptate a </p>  
+            </div>
+            <div class="fdiv">
+                <h2>Content Editing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia repudiandae, quis obcaecati animi in voluptate a </p>  
+            </div>
+        </div>
+
+
+        <div class="description" id="lastsec">
+            <h1>Join Our Newsletter</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia repudiandae, quis obcaecati animi in voluptate illum eius. Quae facere fugiat nihil incidunt commodi. Sapiente assumenda porro laborum vitae blanditiis</p>
+            <hr>
+        </div>
+        <div class="subscribe">
+            <input type="text" placeholder="Email">
+            <button>SUBSCRIBE NOW</button>
+
+        </div>
+    </section>
+    <footer>
+        <p>MADE BY <a class="footerlink" href="">TUTORIALIZINE</a> IMAGE COURTESY TO <a class="footerlink" href="">UNSPLASH</a><br>NO ATTRIBUTION REQUIRED. YOU CAN REMOVE THIS FOOTER.</p>
+    </footer>
+
+
+
+</body>
+</html>
