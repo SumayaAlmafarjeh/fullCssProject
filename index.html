@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumaya Almafarjeh</title>
+    <title>Sumaya ALmafarjeh</title>
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth; 
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
         body{
@@ -18,6 +19,7 @@
             width: 100%;
             height: 100vh;
             background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4));
+            /* i can use background color !*/
             overflow: hidden;
         }
         #bg{
@@ -37,14 +39,22 @@
             padding: 30px;
         }
         #logo{
-            width: 60px;
-            
+            width:60px;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            margin-left: 20px;
+            margin-right: 20px;
         }
         .menu a{
+           
             color: white;
             font-size:20px;
             text-decoration: none;
-            padding: 20px;
+            padding: 10px;
+          
         }
         #hero{
             display: flex;
@@ -70,34 +80,8 @@
             color: white;
             font-size: 18px;
         }
-        #logo:hover{
-            box-shadow: 5px 10px 10px rgba(255, 217, 0, 0.689);
-            border-radius: 50%;
-        }
-        .menu a:hover{
-            color:rgba(255, 217, 0);
-        }
-        #hero button:hover{
-            background-color: rgba(255, 217, 0);
-            color: rgb(68, 68, 68);
-        }
-        @media(max-width:800px){
-            nav{
-                display: flex;
-                flex-direction: column;
-            }
-            #hero h1{
-            font-size: 40px;
-            padding: 5px;
-            }
-             #hero h3{
-            padding: 30px;
-            }
-            #hero button{
-            border: none;
-            padding: 10px 30px;  
-        }
-        }
+       
+       
         #sec1{
             display: flex;
             flex-direction: column;
@@ -156,6 +140,7 @@
             justify-content: center;
             align-items: center;
             justify-content:space-around;
+            flex-wrap: wrap;
             
         }
         .fdiv{
@@ -220,11 +205,136 @@
            font-style: bold;
            font-size: 14px ;
         }
+        #logo:hover{
+            box-shadow: 5px 10px 10px rgba(255, 217, 0, 0.689);
+            border-radius: 50%;
+        }
+        .menu a:hover{
+            color:rgba(255, 217, 0);
+        }
+        #hero button:hover{
+            background-color: rgba(255, 217, 0);
+            color: rgb(68, 68, 68);
+        }
 
+        @media(max-width:320px){
+            nav{
+                display: flex;
+                flex-direction: column;
+            }
+            #logo{
+            margin-bottom: 20px;
+           }
+           .menu a{
+            font-size:15px;  
+            }
+            #hero h1{
+           
+            font-weight: 20;
+            font-size: 1rem;
+            padding: 5px;
+            }
+             #hero h3{
+            padding: 30px;
+            }
 
+            #hero button{
+            border: none;
+            padding: 5px 20px; 
+            font-size: 13px; 
+            }
+            .simg{
+            width:30%;
+            height: 40px;
+            margin: 5px;
+            }
+            .limg{
+                width: 70%;
+                height: 40px;
+                margin: 5px;
+            }
+            .description h1{
+            font-weight:large;
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+        .description p{
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .description hr{
+            width: 60%; 
+        }
+        #sec1,.sec2{
 
+            margin: 20px;
+        }
+        .fdiv{
+           
+            width: 320px;
+            padding: 15px
+        }
+        .fdiv h2{
+            
+            padding: 10px;
+        }
+        .fdiv p{
+           
+            padding: 2px;
+            line-height: 1;
+        }
+        #lastsec{
+            margin-top:0;
+        }
+        .subscribe{
+          flex-direction: column;
+          
+        
+        }
+        .subscribe input{
+            width: 200px;
+            padding: 5px;
+            margin-right: 0;
+        }
+        .subscribe button{
+            margin-top: 8px;
+            padding: 5px 10px;
+           
 
+        }
 
+        }
+        @media(max-width:768px){
+            nav{
+                display: flex;
+                flex-direction: column;
+            }
+            #logo{
+            margin-bottom: 20px;
+           }
+            #hero h1{
+            font-size: 35px;
+            padding: 5px;
+            }
+             #hero h3{
+            padding: 30px;
+            }
+            #hero button{
+            border: none;
+            padding: 10px 30px;  
+           }
+           .simg{
+            width:30%;
+            height: 200px;
+            margin: 2px;
+            }
+            .limg{
+                width: 70%;
+                height: 200px;
+                margin: 2px;
+            }
+
+        }
     </style>
 </head>
 <body>
@@ -262,6 +372,7 @@
                 <img src="im4sm.jpg" alt="" class="simg">
             </div>
         </div>
+        
     </section>
 
     <section class="sec2">
